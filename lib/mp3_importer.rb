@@ -14,7 +14,7 @@ class MP3Importer
   end
 
   def import
-    files.collect{|filename| Song.new_by_filename(filename)}
+    self.files.collect{|filename| Song.new_by_filename(filename)}
   end
 
 end
