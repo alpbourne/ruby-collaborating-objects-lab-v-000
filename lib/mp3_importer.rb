@@ -8,7 +8,7 @@ class MP3Importer
 
   def files
     file_list = Dir.glob("#{path}/*.mp3")
-    files_list.each do |file|
+    file_list.each do |file|
       file.slice!("#{path}/")
     end
   end
