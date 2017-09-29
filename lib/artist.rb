@@ -31,7 +31,7 @@ class Artist
     if self.find_by_name(name)
       self.find_by_name(name)
     else
-      Artist.new
+      Artist.new(name)
     end
   end
 
